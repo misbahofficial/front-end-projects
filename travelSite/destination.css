@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@500&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  list-style: none;
+  text-decoration: none;
+}
+#header{
+  max-width: 1500px;
+  width: 100%;
+  height: 60vh;
+  background-image: url(pics/grad.jpg);
+  background-size: cover;
+}
+nav{
+  width: 95%;
+  height: 85px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav .logo{
+  font-size: 2rem;
+}
+nav .logo a{
+  font-family:'Grenze Gotisch',cursive;
+  color: white;
+}
+.nav-pages ul{
+  display: flex;
+}
+.nav-pages ul li a{
+  color: white;
+  margin: 0 20px;
+  font-weight: 600;
+}
+.nav-pages ul li a:hover{
+  border-bottom: 2px solid white;
+}
+#header img{
+  display: block;
+  position: relative;
+  bottom: 0;
+  width: 700px;
+  height: 295px;
+  margin: auto;
+}
+.icon{
+  display: none;
+}
+@media (max-width: 600px){
+  .nav-pages ul{
+    flex-direction: column;
+  }
+  .nav-pages ul{
+    display: block;
+    padding: 30px;
+  }
+  .nav-pages ul li{
+    padding: 10px;
+  }
+  .nav-pages{
+    position: absolute;
+    background: black;
+    height: 100vh;
+    width: 250px;
+    top: 0;
+    right: -250px;
+    text-align: left;
+    z-index: 2;
+    transition: 0.6s;
+  }
+  .nav-pages ul li a{
+    font-size: 1rem;
+  }
+  #header{
+    overflow: hidden;
+  }
+  #header img{
+    position: relative;
+    display: block;
+    bottom: -30px;
+    width: 100%;
+    margin: auto;
+  }
+   .icon{
+    color: white;
+    font-size: 2rem;
+    font-weight: 600;
+    display: block;
+    padding: 10px;
+    cursor: pointer;
+  }
+}
+
+/* destination styles */
+.destination-container{
+  width: 100vw;
+  height: auto;
+}
+.destination-container > h1{
+  width: 500px;
+  display: block;
+  margin: auto;
+  text-align: center;
+  border-bottom: 2px solid black;
+  padding: 20px;
+}
+.destinations{
+  padding: 40px 0 40px 0;
+  width: 80%;
+  height: auto;
+  display: flex;
+  justify-content: space-around;
+  margin: auto;
+}
+.img-div{
+  width: 100%;
+  height: 250px;
+}
+.img-div > h1{
+  text-align: center;
+  line-height: 250px;
+  color: white;
+  font-size: 2rem;
+  margin-top: 50px;
+}
+button{
+  width: 400px;
+  margin-top: 10px;
+  height: 30px;
+  background: blue;
+  color: white;
+  font-size: 1rem;
+  border: none;
+  cursor: poin
+}
+.destinations .one .img-div{
+  background-image: url(pics/beach.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.destinations .two .img-div{
+  background-image: url(pics/forest.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.destinations .three .img-div{
+  background-image: url(pics/landscape.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.destinations .four .img-div{
+  background-image: url(pics/iceHill.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+@media (max-width: 600px){
+  .destination-container > h1{
+    font-size: 1rem;
+    width: 300px;
+    margin: auto;
+  }
+  .destinations{
+    width: 90%;
+    margin: 0 auto;
+    flex-direction: column;
+  }
+  button{
+    width: 100%;
+  }
+  .countries{
+    width: 100%;
+    margin: auto;
+  }
+}
+
+/* contact styles */
+
+#contact{
+  width: 100%;
+  max-width: 1500px;
+  background-image: url(pics/grad.jpg);
+  height: auto;
+  background-size: cover;
+  background-position: center;
+}
+#contact > h1{
+  width: 200px;
+  text-align: center;
+  margin: auto;
+  padding: 20px 0 10px 0;
+  border-bottom: 2px solid white;
+  color: white;
+}
+.contact-container{
+  width: 80%;
+  margin: auto;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  display: flex;
+  justify-content: space-around;
+}
+.contact-container .left-div input, textarea{
+  display: block;
+  width: 300px;
+  padding: 10px;
+  margin: 20px;
+}
+.right-div{
+  padding: 10px;
+}
+.right-div .general-links p{
+  line-height: 40px;
+  color: white;
+  font-size: 1.3rem;
+}
+.right-div .social-links img{
+  width: 30px;
+  height: 30px;
+  margin-right: 20px;
+}
+.right-div .social-links > h1{
+  margin: 30px 0 10px 0;
+  color: white;
+}
+@media (max-width: 600px){
+  .contact-container{
+    flex-direction: column;
+  }
+  .contact-container .left-div input, textarea{
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin: 15px auto;
+  }
+  .right-div .general-links p{
+    line-height: 30px;
+    font-size: 0.9rem;
+  }
+}
+hr{
+  width: 80%;
+  margin: auto;
+  height: 1px;
+  color: white;
+}
+/* footer section style */
+#footer{
+  width: 80%;
+  margin: auto;
+  padding: 20px;
+  color: white;
+  text-align: center;
+}
+@media (max-width: 600px){
+  #footer{
+    font-size: 0.8rem;
+  }
+}

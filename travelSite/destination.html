@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Desniations - Blue Bucket</title>
+  <link rel="stylesheet" href="destination.css">
+</head>
+<body>
+  <section id="header">
+    <nav>
+      <div class="logo"><h1><a href="index.html">BLUE BUCKET</a></h1></div>
+      <div class="nav-pages" id="nav-links">
+        <span class="icon cross" onclick="hideMenu()">&#9747;</span>
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="#">PRICING</a></li>
+          <li><a href="destination.html">DESTINATIONS</a></li>
+          <li><a href="#contact">CONTACT</a></li>
+          <li><a href="about.html">ABOUT</a></li>
+        </ul>
+      </div>
+      <span class="icon bars" onclick="showMenu()">&#9776;</span>
+    </nav>
+    <img src="pics/travel2.png" alt="">
+  </section>
+
+  <!-- destination section -->
+
+  <section class="destination-container">
+    <h1>OUR CURRENT DESTINATIONS</h1>
+      <div class="top destinations">
+        <div class="countries one">
+          <div class="img-div">
+            <h1>BEACH</h1>
+          </div>
+          <a href="#"><button type="button">BOOK NOW</button></a>
+        </div>
+        <div class="countries two">
+          <div class="img-div">
+            <h1>FOREST</h1>
+          </div>
+          <a href="#"><button type="button">BOOK NOW</button></a>
+        </div>
+      </div>
+      <div class="bottom destinations">
+        <div class="countries three">
+          <div class="img-div">
+            <h1>LANDSCAPE</h1>
+          </div>
+          <a href="#"><button type="button">BOOK NOW</button></a>
+        </div>
+        <div class="countries four">
+          <div class="img-div">
+            <h1>JAPAN</h1>
+          </div>
+          <a href="#"><button type="button">BOOK NOW</button></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- contact section -->
+
+  <section id="contact">
+    <h1>Get In Touch</h1>
+    <div class="contact-container">
+      <div class="left-div">
+        <form class="contact-form">
+          <input type="text" placeholder="Your name">
+          <input type="text" placeholder="Email or phone">
+          <textarea rows="2" cols="10" placeholder="Write here.."></textarea>
+          <a href="#"><input class="submit-btn" type="submit" value="Submit"></a>
+        </form>
+      </div>
+      <div class="right-div">
+        <div class="general-links">
+          <p>Phone: +8801234-567790</p>
+          <p>Website: www.bluebucket.com</p>
+          <p>E-mail: customer-support@bluebucket.com</p>
+        </div>
+        <div class="social-links">
+          <h1>Find us on:</h1>
+          <a href="#"><img src="pics/fb.svg" alt=""></a>
+          <a href="#"><img src="pics/whatsapp.svg" alt=""></a>
+          <a href="#"><img src="pics/linkedin.svg" alt=""></a>
+          <a href="#"><img src="pics/twitter.svg" alt=""></a>
+        </div>
+      </div>
+    </div>
+    <hr>
+    <section id="footer">
+      <p>Blue Bucket &copy; 2021, All rights reserved.</p>
+      <p>Made by Misbah Ahmed</p>
+    </section>
+  </section>
+
+  <!-- javascript codes for toggle navbar -->
+  <script src="script.js"></script>
+</body>
+</html>
